@@ -10,11 +10,14 @@ const hoteles = require('./modules/hoteles/rutas');
 const imagenes = require('./modules/imagenes/rutas');
 const incluye = require('./modules/incluye/rutas');
 const itinerarios = require('./modules/itinerarios/rutas');
+const paises = require('./modules/paises/rutas');
 const programas = require('./modules/programas/rutas');
 const valores_programas = require('./modules/valores_programas/rutas');
+const tipoCambio = require('./modules/valortc/rutas');
 const usuarios = require('./modules/usuarios/rutas');
 const auth = require('./modules/auth/rutas');
 const error = require('./red/errors');
+const vuelos = require('./modules/vuelos/rutas');
 
 
 const app = express();
@@ -36,8 +39,11 @@ app.use('/api/Hoteles', hoteles);
 app.use('/api/Imagenes', imagenes);
 app.use('/api/Incluye', incluye);
 app.use('/api/Itinerarios', itinerarios);
+app.use('/api/Paises', paises)
 app.use('/api/Programas', programas);
-app.use('/api/ValoresProgramas', valores_programas)
+app.use('/api/ValoresProgramas', valores_programas);
+app.use('/api/TipoCambio', tipoCambio);
+app.use('/api/Vuelos', vuelos);
 app.use('/api/Usuarios', usuarios);
 app.use('/api/auth', auth);
 
