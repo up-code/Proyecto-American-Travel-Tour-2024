@@ -1,7 +1,7 @@
 
 const TABLE = 'incluye';
 
-module.exports = function (dbInyected) {
+module.exports = (dbInyected) => {
 
     let db = dbInyected;
 

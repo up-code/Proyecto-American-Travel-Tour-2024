@@ -1,5 +1,5 @@
 
-const TABLE = 'condiciones';
+const TABLE = 'valortc';
 
 module.exports = (dbInyected) => {
 

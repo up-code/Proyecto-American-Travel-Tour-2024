@@ -2,7 +2,7 @@
 const TABLE = 'auth';
 const bcrypt = require('bcrypt');
 const auth = require('../../authentication');
-module.exports = function (dbInyected) {
+module.exports = (dbInyected) => {
 
     let db = dbInyected;
 

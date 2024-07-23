@@ -1,7 +1,7 @@
 const auth = require('../auth');
 const TABLE = 'usuarios';
 
-module.exports = function (dbInyected) {
+module.exports = (dbInyected) => {
 
     let db = dbInyected;
 

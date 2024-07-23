@@ -1,7 +1,7 @@
 
 const TABLE = 'imagenes';
 
-module.exports = function (dbInyected) {
+module.exports = (dbInyected) => {
 
     let db = dbInyected;
 
