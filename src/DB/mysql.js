@@ -73,7 +73,7 @@ const delet = (table, data) => {
 const query = (table, qry) =>{
     return new Promise((resolve, reject) => {
         connection.query(`SELECT * FROM ${table} WHERE ?`, qry, (error, result)=>{
-            return error ? reject(error) : resolve(result[0]);
+            return error ? reject(error) : resolve(result);
         });
     });
 }

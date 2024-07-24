@@ -32,7 +32,7 @@ module.exports = (dbInyected) => {
     const login = async (usuario, password) =>{
         const data = await db.query(TABLE, {usuario: usuario});
 
-        return bcrypt.compare(password, data.password)
+        return bcrypt.compare(password, data[0].password)
         .then(result =>{
             if(result === true){
                     // generate Token

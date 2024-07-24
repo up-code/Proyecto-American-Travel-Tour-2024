@@ -16,6 +16,9 @@ module.exports =  (dbInyected) => {
     const getById = (id) => {
         return db.getById(TABLE, id)
     }
+    const getByIdPrograma = (id) => {
+        return db.query(TABLE, {id_programa: id})
+    }
     
     const delet = (body) => {
         return db.delet(TABLE,body);
@@ -29,6 +32,7 @@ module.exports =  (dbInyected) => {
         getAll,
         getById,
         create,
-        delet
+        delet,
+        getByIdPrograma
     }
 }
